@@ -12,7 +12,8 @@ public class caladd
         do {
             System.out.print("1. Add two numbers\n");
             System.out.print("2. Multiply two numbers\n");
-            System.out.print("3. Exit\n");
+            System.out.print("3. Subtract two numbers\n");
+            System.out.print("4. Exit\n");
             System.out.print("Enter your choice: ");
             choice = scan.next().charAt(0);
             switch(choice)
@@ -31,9 +32,17 @@ public class caladd
                             b = scan.nextFloat();
                             res = a*b;
                             System.out.print("Result = " + res);
-                            break;            
-            
+                            break;
+                            
                 case '3':
+                            System.out.print("Enter two numbers: ");
+                            a = scan.nextFloat();
+                            b = scan.nextFloat();
+                            res = a-b;
+                            System.out.print("Result = " + res);
+                            break;
+            
+                case '4':
                             System.exit(0);
                             break;
                 
